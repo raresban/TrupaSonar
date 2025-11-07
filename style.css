@@ -53,6 +53,16 @@ img{max-width:100%; display:block}
 .header-inner{display:flex; align-items:center; justify-content:space-between; height:64px}
 .brand{display:flex; align-items:center; gap:10px; color:var(--text); text-decoration:none}
 .brand-logo{height:48px; width:auto}
+
+@media (max-width:768px){
+  .brand{
+    display:none;
+  }
+  .header-inner{
+    justify-content:center;
+  }
+}
+
 .nav{display:flex; gap:18px; align-items:center}
 .nav a{color:var(--muted); text-decoration:none; font-weight:600}
 .nav a:hover{color:var(--text)}
@@ -71,6 +81,20 @@ img{max-width:100%; display:block}
   display:flex;
   flex-direction:column;
   align-items:center;
+}
+
+/* Logo mobil deasupra slideshow */
+.mobile-logo{
+  display:none;
+}
+
+@media (max-width:768px){
+  .mobile-logo{
+    display:block;
+    margin:0 auto 1.5rem;
+    width:180px;
+    height:auto;
+  }
 }
 
 .btn{display:inline-block; padding:.85rem 1.2rem; border-radius:999px; text-decoration:none; font-weight:800; transition:.2s}
